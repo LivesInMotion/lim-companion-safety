@@ -122,7 +122,7 @@ function stays(place: string): Handoff[] {
     maps(place ? `hotels in ${place}` : "hotels near me")];
 }
 
-const GROCERY_WORDS = /(milk|bread|rice|eggs|beans|flour|oil|sugar|nappies|fruit|vegetables|chicken|meat|fish|yam|garri|tomatoes|onions|pasta|cereal|groceries|food)/i;
+const GROCERY_WORDS = /\b(milk|bread|rice|eggs|beans|flour|oil|sugar|nappies|fruit|vegetables|chicken|meat|fish|yam|garri|tomatoes|onions|pasta|cereal|groceries|food)\b/i;
 
 function jobs(c: Country, what: string): Handoff[] {
   const q = what || "jobs";
