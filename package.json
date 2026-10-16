@@ -1,0 +1,8 @@
+{
+  "name": "lim-companion-safety",
+  "version": "1.0.0",
+  "description": "Reviewed safety replies, human-help directory, front-door router and one-tap hand-offs from LIM Companions",
+  "license": "Apache-2.0",
+  "type": "module",
+  "scripts": { "test": "node --experimental-strip-types --test test/*.test.ts" }
+}
