@@ -198,7 +198,10 @@ export function handoffHint(message: string, country?: string | null, exact = tr
   const names = h.map((x) => x.label).join("; ");
   return `ONE-TAP LINKS: the LIM app shows buttons under your reply for this request (${exact ? "" : "for example "}${names}). `
     + "Give practical help first, then say in one short sentence that they can tap a button below to open it with the details filled in, "
-    + "and that they choose and pay in that app. Never say you cannot help with this, and never claim you booked, ordered, paid or contacted anyone.";
+    + "and that they choose and pay in that app. Never say you cannot help with this, and never claim you booked, ordered, paid or contacted anyone. "
+    // 16-17 Oct 2026 nightly eval: a companion offered 112 for a taxi, and another invented a "Book a Ride" button.
+    + "Name only the buttons listed above (for example \"tap Uber below\"); never invent other buttons, apps or LIM features. "
+    + "This is an everyday request, not an emergency: never give emergency numbers such as 112, 999 or 911 for it.";
 }
 
 /** Health topic worth an NHS.UK card (a named condition, symptom or medicine), never for crisis messages. */
